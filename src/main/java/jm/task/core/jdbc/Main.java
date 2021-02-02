@@ -11,13 +11,14 @@ public class Main {
 
         UserDao user = new UserServiceImpl();
         user.createUsersTable();
-        user.saveUser("Alex", "Sidorov", (byte) 27);
         user.saveUser("Ivan", "Ivanov", (byte) 18);
         user.saveUser("Dmitriy", "Dmitriev", (byte) 35);
         user.saveUser("Alexander", "Eliseev", (byte) 37);
-//        user.removeUserById(1L);
         user.getAllUsers();
+//        user.removeUserById(3L);
         user.cleanUsersTable();
         user.dropUsersTable();
+        Util.closeSessionFactory();
+
     }
 }
