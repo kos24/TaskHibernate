@@ -13,8 +13,6 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void createUsersTable() {
-        PreparedStatement preparedStatement = null;
-
 
 
     }
